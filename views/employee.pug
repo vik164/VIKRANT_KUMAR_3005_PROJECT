@@ -1,0 +1,18 @@
+html 
+    head 
+        title Final Database Project
+        script(src="/client.js")
+    body(onload="init()" style={'background-color':'antiquewhite'})
+        include ../views/partials/header
+        div 
+            h3 What would you like to know about your employees:
+        div
+            p Firstname:
+                input(type="text" name="GetCustomer_first" id="GetEmp_first")
+            p Lastname:
+                input(type="text" name="GetCustomer_last" id="GetEmp_last")
+            p Dept:
+                input(type="text" name="dept_name" id="dept_name")
+        div 
+            button(type="button", id="sub") Submit
+        div(class="row" id="info")

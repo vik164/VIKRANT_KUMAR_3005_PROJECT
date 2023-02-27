@@ -1,0 +1,19 @@
+html 
+    head 
+        title Final Database Project
+    body(style={'background-color': 'lightblue'})
+        include ../views/partials/header
+        div 
+            h1(style={'text-align': 'center', width:'100%', height:'10%', position: 'absolute', 'background-color': 'aliceblue'}) Welcome to Your Business
+        
+        div 
+            h3 What would you like to know:
+
+        div 
+            b(type="button" style={display: 'block', border: 'none', height: '10%', border: '4px solid black', width: '150px', 'background-color': 'aliceblue', padding: '14px 28px', 'font-size': '26px', 'text-align': 'center', float: 'left', margin: '120'} onclick="location.href = '/customer';") Customer  
+
+            b(type="button" style={display: 'block', border: 'none', height: '10%', border: '4px solid black', width: '150px', 'background-color': 'aliceblue', padding: '14px 28px', 'font-size': '26px', 'text-align': 'center', float: 'left', margin: '120'} onclick="location.href = '/sale';") Sale
+
+            b(type="button" style={display: 'block', border: 'none', height: '10%', border: '4px solid black', width: '150px', 'background-color': 'aliceblue', padding: '14px 28px', 'font-size': '26px', 'text-align': 'center', float: 'left', margin: '120'} onclick="location.href = '/product';") Product
+
+            b(type="button" style={display: 'block', border: 'none', height: '10%', border: '4px solid black', width: '150px', 'background-color': 'aliceblue', padding: '14px 28px', 'font-size': '26px', 'text-align': 'center', float: 'left', margin: '120'} onclick="location.href = '/employee';") Employee

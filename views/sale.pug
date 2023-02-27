@@ -1,0 +1,20 @@
+html 
+    head 
+        title Final Database Project
+        script(src="/client.js")
+    body(onload="init()" style={'background-color':'antiquewhite'})
+        include ../views/partials/header
+        div 
+            h3 What would you like to know about your sales:
+        div
+            p Sale ID: 
+                input(type="text" name="sale_id" id="sale_id")
+            p Date Year:
+                input(type="text" name="sale_date" id="sale_dateY" size="4")
+                a  - Month
+                input(type="text" name="sale_date" id="sale_dateM"  size="2")
+                a  - Day
+                input(type="text" name="sale_date" id="sale_dateD" size="2")
+        div 
+            button(type="button", id="sub") Submit
+        div(class="row" id="add_sale")
